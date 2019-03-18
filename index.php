@@ -12,7 +12,6 @@
 	<link rel="stylesheet" href="assets/vendor/linearicons/style.css">
 	<!-- MAIN CSS -->
 	<link rel="stylesheet" href="assets/css/main.min.css">
-	
 
 </head>
 
@@ -21,8 +20,8 @@
 	<div id="wrapper">
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="brand">
-				<a href="index.php">DATABASE PANTI ASUHAN</a>
+			<div >
+				<a class="brand" href="index.php">DATABASE PANTI ASUHAN</a>
 			</div>
 			<div class="container-fluid">
 				<div id="tour-fullwidth" class="navbar-btn">
@@ -102,9 +101,40 @@
 								</span>
 								<hr width="80%">
 								<img src="image/LKSAMahdiyat.jpeg" style="width:100%;" alt="">
+								<hr width="80%">
 							</div>
 						</div>
 						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="widget widget-mini-bar">
+										<span style="font-size: 14px;">
+					                 	<i class="fa fa-user text-primary mb-2 fa-2x"></i><br>
+					                  	<h4>Kepala Panti</h4>
+					                	</span>
+					                <hr width="80%">
+										<?php
+										include("koneksi.php");
+										$query = "SELECT * FROM pengurus_panti WHERE jabatan='Kepala'";
+										$hasil = mysqli_query($link, $query);?>
+					                <h2 class="text-primary mb-2 fa-2x"><?php echo mysqli_fetch_assoc($hasil)['nama']; ?></h2>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="widget widget-mini-bar">
+										<span style="font-size: 14px;">
+					                 	<i class="fa fa-child text-primary mb-2 fa-2x"></i><br>
+					                  	<h4>Jumlah Anak Asuh</h4>
+					                	</span>
+					                <hr width="80%">
+										<?php
+										$query2 = "SELECT * FROM anak_panti";
+										$hasil2 = mysqli_query($link, $query2);
+											?>
+					                <h2 class="text-primary mb-2 fa-2x"><?php echo mysqli_num_rows($hasil2); ?> Anak</h2>
+									</div>
+								</div>
+							</div>
 							<div class="widget">
 								<span style="font-size: 14px;0" class="widget-mini-bar">
 									<h4 style="font-size: 20px; font-weight: bold;text-align: center">Data Panti Asuhan A</h4>
@@ -123,21 +153,9 @@
 									</div>
 								</div>
 								<div class="form-group row">
-									<label for="#alamat" class="col-sm-4 col-form-label font-weight-bold text-dark">Jumlah Anak</label>
-									<div class="col-sm-8">
-									<p id="alamat" class="col-form-label"><span>: </span><?php echo $data['jumlah_anak']; ?> Anak</p>
-									</div>
-								</div>
-								<div class="form-group row">
 									<label for="#alamat" class="col-sm-4 col-form-label font-weight-bold text-dark">Tahun Terbentuk</label>
 									<div class="col-sm-8">
 									<p id="alamat" class="col-form-label"><span>: </span><?php echo $data['tahun_terbentuk']; ?></p>
-									</div>
-								</div>
-								<div class="form-group row">
-									<label for="#alamat" class="col-sm-4 col-form-label font-weight-bold text-dark">Kepala Panti</label>
-									<div class="col-sm-8">
-									<p id="alamat" class="col-form-label"><span>: </span><?php echo $data['kepala_panti']; ?></p>
 									</div>
 								</div>
 								<div class="form-group row">

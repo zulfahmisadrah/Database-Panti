@@ -12,7 +12,7 @@ body {
 a {
   color: #1a9ac9; }
   a:hover, a:focus {
-    color: #50827e;
+    color: #0d6e91;
     text-decoration: none; }
 
 th {
@@ -209,19 +209,23 @@ html.fullscreen-bg #wrapper {
   padding: 0;
   margin: 0;
   border: none;
-  background-color: #fff; }
+  background-color: #127ba1; }
   .navbar-default .navbar-collapse {
     width: 90%; }
-  .navbar-default .navbar-nav > li > a {
-    color: #5e6773; }
-  .navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav > li:focus,
+  .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover {
+    color: #fff; }
+  .navbar-default .navbar-nav > li:hover, .navbar-default .navbar-nav > li>a:focus,
   .navbar-default .navbar-nav > .open > a:hover,
   .navbar-default .navbar-nav > .open > a:focus {
-    background-color: #f2f3f5; }
+    background-color: #1a9ac9;
+    color: #fff; }
   .navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #f8f8f8; }
+    background-color: #1a9ac9;
+    color: #fff; }
   .navbar-default .brand {
     float: left;
+    color: white;
+    font-weight: bolder;
     padding: 15px 40px; }
   @media screen and (max-width: 1024px) {
     .navbar-default .brand {
@@ -236,10 +240,11 @@ html.fullscreen-bg #wrapper {
 
 .navbar-btn {
   float: left;
+  color: #fff;
   margin: 0;
   line-height: 51px; }
   .navbar-btn:hover, .navbar-btn:focus {
-    background: #f2f3f5; }
+    background: #1a9ac9; }
   .navbar-btn button {
     font-size: 24px;
     padding: 0 20px;
@@ -603,7 +608,7 @@ ul.notifications .notification-item .timestamp {
     margin-right: 3px;
     color: #1a9ac9; }
     .breadcrumb i:hover, .breadcrumb i:focus {
-      color: #50827e; }
+      color: #0d6e91; }
   .breadcrumb > li + li:before {
     color: #e5e7e8; }
   @media screen and (max-width: 767px) {

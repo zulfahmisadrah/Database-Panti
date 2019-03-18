@@ -12,11 +12,6 @@
 	<link rel="stylesheet" href="assets/vendor/linearicons/style.css">
 	<!-- MAIN CSS -->
 	<link rel="stylesheet" href="assets/css/main.min.css">
-	<!-- GOOGLE FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
-	<!-- ICONS -->
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/logo-minified-dark.png">
 </head>
 
 <body>
@@ -24,8 +19,8 @@
 	<div id="wrapper">
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="brand">
-				<a href="index.php">DATABASE PANTI ASUHAN</a>
+			<div >
+				<a class="brand" href="index.php">DATABASE PANTI ASUHAN</a>
 			</div>
 			<div class="container-fluid">
 				<div id="tour-fullwidth" class="navbar-btn">

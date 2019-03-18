@@ -12,9 +12,6 @@
 	<link rel="stylesheet" href="assets/vendor/linearicons/style.css">
 	<!-- MAIN CSS -->
 	<link rel="stylesheet" href="assets/css/main.min.css">
-	<!-- GOOGLE FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
-
 </head>
 
 <body>
@@ -22,8 +19,8 @@
 	<div id="wrapper">
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="brand">
-				<a href="index.php">DATABASE PANTI ASUHAN</a>
+			<div >
+				<a class="brand" href="index.php">DATABASE PANTI ASUHAN</a>
 			</div>
 			<div class="container-fluid">
 				<div id="tour-fullwidth" class="navbar-btn">
