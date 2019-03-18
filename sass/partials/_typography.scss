@@ -1,0 +1,46 @@
+/********************
+ * TYPOGRAPHY
+ ********************/
+
+.heading-border {
+	@include inline-block;
+
+	margin-bottom: 30px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #777;
+	font-size: 24px;
+
+}
+
+.text-primary {
+	color: $color-accent;
+}
+
+.text-success {
+	color: $color-success;
+}
+
+.text-warning {
+	color: $color-warning;
+}
+
+.text-danger {
+	color: $color-danger;
+}
+
+.text-muted {
+	color: $muted-color;
+}
+
+.help-block {
+	color: $muted-color;
+	font-size: 13px;
+}
+
+ul.list-justify > li {
+	margin-bottom: 5px;
+
+	span {
+		float: right;
+	}
+}

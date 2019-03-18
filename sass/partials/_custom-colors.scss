@@ -1,0 +1,10 @@
+/********************
+ *  CUSTOM COLORS
+ ********************/
+
+@each $color-name, $bg-color in $custom-colors {
+	.custom-bg-#{$color-name} {
+		background-color: $bg-color !important;
+	}
+}
+

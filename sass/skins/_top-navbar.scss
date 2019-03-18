@@ -1,0 +1,50 @@
+@import '../mixins/css3';
+
+.navbar-default {
+	@include box-shadow(none);
+
+	background-color: $navbar-color;
+
+	.navbar-nav {
+		> li > a {
+			color: $font-color;
+		}
+
+		> li {
+			&:hover,
+			&:focus {
+				background-color: $navbar-menu-hover;
+			}
+
+			> a {
+				&:hover,
+				&:focus {
+					color: $font-color;
+				}
+			}
+		}
+
+		> .open > a {
+			&,
+			&:hover,
+			&:focus {
+				background-color: $navbar-menu-hover;
+				color: $font-color;
+			}
+		}
+	}
+}
+
+.navbar-btn {
+	color: $font-color;
+
+	&:hover,
+	&:focus {
+		background-color: $navbar-menu-hover;
+	}
+}
+
+.navbar-nav .dropdown-menu {
+	border-top-color: darken($navbar-color, 10%);
+}
+

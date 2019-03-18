@@ -1,0 +1,46 @@
+@import "../base/variables";
+
+#wrapper .sidebar {
+	background-color: $bg-color;
+}
+
+.sidebar .nav > li > a {
+	color: $sidebar-font-color;
+
+	&:hover,
+	&:focus,
+	&.active {
+		color: $color-accent;
+	}
+
+	&:focus,
+	&.active {
+		background-color: $bg-color;
+		color: $color-accent;
+	}
+}
+
+.sidebar .nav .nav {
+	background-color: $bg-color;
+
+	> li > a.active {
+		background-color: darken($bg-color, 2%);
+		color: $sidebar-font-color;
+	}
+}
+
+.sidebar-minified {
+	.sidebar .nav > li:hover,
+	.sidebar .nav > li:hover .collapse li:hover {
+		> a {
+			&,
+			span {
+				background-color: $bg-color;
+				color: $color-accent;
+			}
+		}
+	}
+}
+
+
+

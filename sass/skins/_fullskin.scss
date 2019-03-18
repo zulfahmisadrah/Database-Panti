@@ -1,0 +1,94 @@
+@import '../mixins/css3';
+@import "../base/variables";
+
+/* navbar */
+.navbar-default {
+	@include box-shadow(none);
+
+	background-color: $navbar-color;
+
+	.navbar-nav {
+		> li > a {
+			color: $navbar-font-color;
+		}
+
+		> li {
+			&:hover,
+			&:focus {
+				background-color: $navbar-menu-hover;
+			}
+
+			> a {
+				&:hover,
+				&:focus {
+					color: $navbar-font-color;
+				}
+			}
+		}
+
+		> .open > a {
+			&,
+			&:hover,
+			&:focus {
+				background-color: $navbar-menu-hover;
+				color: $navbar-font-color;
+			}
+		}
+	}
+}
+
+.navbar-btn {
+	color: $navbar-font-color;
+
+	&:hover,
+	&:focus {
+		background-color: $navbar-menu-hover;
+	}
+}
+
+.navbar-nav .dropdown-menu {
+	border-top-color: darken($navbar-color, 10%);
+}
+
+/* sidebar */
+#wrapper .sidebar {
+	background-color: $sidebar-color;
+}
+
+.sidebar .nav > li > a {
+	color: $sidebar-font-color;
+
+	&:hover,
+	&:focus,
+	&.active {
+		color: $color-accent;
+	}
+
+	&:focus,
+	&.active {
+		background-color: $sidebar-color;
+		color: $color-accent;
+	}
+}
+
+.sidebar .nav .nav {
+	background-color: $sidebar-color;
+
+	> li > a.active {
+		background-color: darken($sidebar-color, 2%);
+	}
+}
+
+.sidebar-minified {
+	.sidebar .nav > li:hover,
+	.sidebar .nav > li:hover .collapse li:hover {
+		> a {
+			&,
+			span {
+				background-color: $sidebar-color;
+				color: $color-accent;
+			}
+		}
+	}
+}
+

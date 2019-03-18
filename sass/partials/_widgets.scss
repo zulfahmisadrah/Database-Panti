@@ -1,0 +1,123 @@
+/********************
+ * WIDGETS
+ ********************/
+
+.widget {
+	@include border-radius(3px);
+	@include box-shadow(2px 2px 4px rgba(0,0,0,.05));
+
+	padding: 40px 25px;
+	margin-bottom: 30px;
+	border: 1px solid #e6e6e6;
+}
+
+.widget-task-progress {
+	.left {
+		float: left;
+		width: 65%;
+	}
+
+	.percentage {
+		float: right;
+		font-size: 36px;
+		line-height: 1;
+	}
+
+	a {
+		margin-bottom: 5px;
+		display: block;
+		font-size: 16px;
+		color: $font-color;
+
+		&:hover,
+		&:focus {
+			color: lighten($font-color, 8%);
+		}
+	}
+
+	.progress {
+		margin-bottom: 0;
+	}
+}
+
+.widget-mini-bar {
+	text-align: center;
+
+	.mini-bar-chart {
+		margin-bottom: 15px;
+	}
+
+	span {
+		font-size: 18px;
+		line-height: 1;
+	}
+}
+
+.quick-note {
+	@include border-radius(3px);
+
+	background: #fff;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 30px;
+	border: 1px solid #e6e6e6;
+
+	.quick-note-title {
+		margin-top: 0;
+		font-size: 22px;
+	}
+}
+
+.quick-note-create {
+	.panel-footer {
+		display: none;
+	}
+}
+
+.quick-note-edit {
+	margin-bottom: 0;
+}
+
+/* widget stat */
+.widget-stat {
+	padding: 25px 30px;
+
+	.media-left {
+		padding-right: 15px;
+
+		i {
+			@include border-radius(3px);
+
+			display: block;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			font-size: 18px;
+		}
+	}
+
+	.title {
+		color: $muted-color;
+	}
+
+	.value {
+		display: block;
+		font-size: 26px;
+	}
+
+	.footer {
+		margin-top: 15px;
+		margin-bottom: 0;
+		padding-top: 12px;
+		border-top: 1px solid #f0f0f0;
+
+		span {
+			color: $muted-color;
+			font-size: 13px;
+			margin-left: 8px;
+		}
+	}
+	
+}
+

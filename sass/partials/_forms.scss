@@ -1,0 +1,43 @@
+/********************
+ * FORMS
+ ********************/
+
+legend {
+	font-size: 18px;
+}
+
+.form-horizontal.label-left .control-label {
+	text-align: left;
+}
+
+/* parsley js */
+.parsley-errors-list {
+	margin-top: 8px;
+	
+	li {
+		color: $color-danger;
+		font-size: 0.9em;
+		margin-top: 3px;
+	}
+}
+
+.search-form {
+	position: relative;
+
+	.btn {
+		@include box-shadow(none);
+
+		position: absolute;
+		top: 7px;
+		right: 22px;
+		padding: 0;
+		border: none;
+
+		&:hover,
+		&:focus {
+			background-color: inherit;
+			border-left: none;
+			border-color: inherit;
+		}
+	}
+}
